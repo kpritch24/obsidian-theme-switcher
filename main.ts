@@ -231,7 +231,14 @@ export default class ThemeSwitcherPlugin extends Plugin {
 		// Add window icon
 		const icon = this.statusBarItem.createEl("span", {
 			cls: "theme-statusbar-icon",
-			text: "🪟",
+		});
+
+		// Load SVG icon
+		const iconPath = `${this.manifest.dir}/assets/code-tag.svg`;
+		this.app.vault.adapter.read(iconPath).then((svg) => {
+			icon.innerHTML = svg;
+		}).catch(() => {
+			icon.setText("🪟"); // Fallback to emoji if SVG fails to load
 		});
 
 		// Create popup menu

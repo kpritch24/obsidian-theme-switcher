@@ -8,7 +8,7 @@
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	padding: 0 8px;
+	padding: 0 4px;
 }
 
 .theme-statusbar-button:hover {
@@ -19,6 +19,16 @@
 .theme-statusbar-icon {
 	font-size: 14px;
 	user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+}
+
+.theme-statusbar-icon svg {
+	width: 16px;
+	height: 16px;
 }
 
 /* Popup menu */
