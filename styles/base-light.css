@@ -1,0 +1,46 @@
+/* ========================================
+   Light Mode Styles (from base-light.css)
+   Applied when Obsidian is in light mode
+   ======================================== */
+
+:root {
+    --white-color: #FFFFFF;
+    --light-gray: rgb(240,240,240);
+    --very-light-gray: #FAFAFA;
+    --system-gray-5: rgb(216,216,220);
+    --system-gray-6: rgb(28,28,30);
+    --hca-chrome-ultralight: #D9D9D6;
+    --hca-chrome-light: #BBBCBC;
+    --hca-chrome-dark: #898B8E;
+    --hca-chrome-slate: #58595B;
+    --dark-gray: rgb(40,40,40);
+}
+
+body {
+    --nav-item-color: rgb(50,50,50);
+    --text-highlight-bg: var(--background-primary);
+    --text-normal: var(--dark-gray);
+    --checklist-done-color: var(--dark-gray);
+}
+
+/* Quote Text */
+.HyperMD-quote {
+    background-color: var(--very-light-gray) !important;
+}
+
+.HyperMD-quote::before,
+.cm-quote::before {
+    content: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+/* Paragraphs */
+.cm-line {
+    color: var(--dark-gray);
+}
+
+/* Active Line */
+.cm-active.cm-line {
+    background-color: var(--light-gray);
+}

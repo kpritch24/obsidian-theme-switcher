@@ -1,0 +1,82 @@
+/* Theme Switcher Plugin Styles */
+
+/* Color Palette Section */
+.theme-color-palette {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.theme-color-palette .setting-item {
+    border-left: 3px solid var(--interactive-accent);
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+/* Color Assignments Section */
+.theme-color-assignments {
+    margin-top: 1rem;
+}
+
+.theme-color-assignments h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    font-size: calc(var(--h1-size) * 0.75);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.theme-color-assignments .setting-item {
+    padding-left: 1rem;
+}
+
+/* Theme List Items */
+.setting-item .setting-item-control button {
+    margin-left: 4px;
+}
+
+/* Color Palette Buttons - consistent width for Add/Delete alignment */
+.theme-color-palette .setting-item-control button {
+    min-width: 70px;
+}
+
+/* Color Input Preview */
+input[type="text"][placeholder="#000000"],
+input[type="text"][value^="#"] {
+    font-family: monospace;
+}
+
+/* Improved Layout */
+.theme-switcher-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Section Headers Spacing */
+.setting-item-heading + .setting-item,
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Header Size Hierarchy - Override Obsidian's font-ui-medium for h2 */
+/* h1: 20px, h2: 18px, h3: 17px, h4: 16px - relative to h1-size */
+.vertical-tab-content h2 {
+    font-size: calc(var(--h1-size) * 0.9) !important;
+}
+
+.vertical-tab-content h3 {
+    font-size: calc(var(--h1-size) * 0.85) !important;
+}
+
+/* CTA Buttons */
+.setting-item .setting-item-control button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.setting-item .setting-item-control button.mod-warning {
+    background-color: var(--text-error);
+    color: var(--text-on-accent);
+}
