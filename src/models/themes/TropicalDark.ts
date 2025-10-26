@@ -6,6 +6,7 @@ import { Theme } from "../Theme";
 export const TROPICAL_DARK_THEME: Theme = {
 	id: "tropical-dark",
 	name: "Tropical Dark",
+	mode: "dark",
 	isBuiltin: false,
 	colors: {
         "tropical-blue": "#62E2F8",

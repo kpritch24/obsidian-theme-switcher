@@ -1,6 +1,6 @@
 import { App, PluginSettingTab, Setting, Notice, Platform } from "obsidian";
 import ThemeSwitcherPlugin from "../main";
-import { Theme, SEMANTIC_VARIABLES, ColorAssignments } from "./models/Theme";
+import { Theme, ThemeMode, SEMANTIC_VARIABLES, ColorAssignments } from "./models/Theme";
 import { VIBRANCY_OPTIONS } from "./services/WindowService";
 
 export class ThemeSwitcherSettingTab extends PluginSettingTab {
@@ -318,6 +318,21 @@ export class ThemeSwitcherSettingTab extends PluginSettingTab {
 					.setPlaceholder("Optional description")
 					.onChange(value => {
 						theme.description = value.trim() || undefined;
+						// Don't save here - only save when "Save Theme" button is clicked
+					})
+			);
+
+		// Theme mode
+		new Setting(containerEl)
+			.setName("Theme mode")
+			.setDesc("Select the optimal display mode for this theme")
+			.addDropdown(dropdown =>
+				dropdown
+					.addOption("light", "Light mode")
+					.addOption("dark", "Dark mode")
+					.setValue(theme.mode || "dark")
+					.onChange(value => {
+						theme.mode = value as 'light' | 'dark';
 						// Don't save here - only save when "Save Theme" button is clicked
 					})
 			);

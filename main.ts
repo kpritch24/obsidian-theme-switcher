@@ -126,6 +126,23 @@ export default class ThemeSwitcherPlugin extends Plugin {
 	}
 
 	/**
+	 * Switch Obsidian between light and dark mode
+	 */
+	private switchObsidianMode(targetMode: 'light' | 'dark') {
+		console.log('switchObsidianMode - target:', targetMode);
+
+		try {
+			// Use the specific light/dark mode commands
+			const commandId = targetMode === 'dark' ? 'theme:use-dark' : 'theme:use-light';
+			// @ts-ignore - executeCommandById is available but not in types
+			const result = this.app.commands.executeCommandById(commandId);
+			console.log('Command executed:', commandId, 'result:', result);
+		} catch (e) {
+			console.error('Command failed:', e);
+		}
+	}
+
+	/**
 	 * Setup observer to watch for light/dark mode changes
 	 */
 	private setupThemeModeObserver() {
@@ -172,6 +189,16 @@ export default class ThemeSwitcherPlugin extends Plugin {
 	 */
 	async setActiveTheme(themeId: string | null) {
 		this.settings.activeThemeId = themeId;
+
+		// Switch Obsidian mode based on theme's mode setting
+		if (themeId) {
+			const theme = this.themeService.getTheme(themeId);
+			console.log('Theme selected:', theme?.name, 'Mode:', theme?.mode);
+			if (theme && theme.mode) {
+				this.switchObsidianMode(theme.mode);
+			}
+		}
+
 		await this.applyCurrentTheme();
 		await this.saveSettings();
 	}

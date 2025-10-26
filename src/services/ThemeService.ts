@@ -50,10 +50,16 @@ export class ThemeService {
 					}
 				}
 
+				// Sync mode property if missing (default to dark if not set)
+				if (!savedTheme.mode) {
+					needsUpdate = true;
+				}
+
 				// Update the theme if new assignments were added
 				if (needsUpdate) {
 					this.themes.set(defaultTheme.id, {
 						...savedTheme,
+						mode: savedTheme.mode || defaultTheme.mode || 'dark',
 						assignments: updatedAssignments
 					});
 				}
@@ -127,6 +133,7 @@ export class ThemeService {
 			id: newId,
 			name,
 			isBuiltin: false,
+			mode: original.mode,
 			colors: { ...original.colors },
 			assignments: { ...original.assignments },
 		};

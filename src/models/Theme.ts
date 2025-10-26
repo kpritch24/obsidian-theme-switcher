@@ -1,10 +1,16 @@
 /**
+ * Theme mode indicating optimal display context
+ */
+export type ThemeMode = 'light' | 'dark';
+
+/**
  * Represents a single color theme with palette and semantic assignments
  */
 export interface Theme {
 	id: string;
 	name: string;
 	description?: string;
+	mode?: ThemeMode;
 	colors: ColorPalette;
 	assignments: ColorAssignments;
 	isBuiltin: boolean;

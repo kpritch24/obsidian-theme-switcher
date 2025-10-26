@@ -6,6 +6,7 @@ import { Theme } from "../Theme";
 export const DRACULA_DARK_THEME: Theme = {
 	id: "dracula-dark",
 	name: "Dracula Dark",
+	mode: "dark",
 	isBuiltin: false,
 	colors: {
 		"color-blue-1": "#6DCCFF",

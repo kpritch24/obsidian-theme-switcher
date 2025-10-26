@@ -6,6 +6,7 @@ import { Theme } from "../Theme";
 export const HCA_LIGHT_THEME: Theme = {
 	id: "hca-light",
 	name: "HCA Light",
+	mode: "light",
 	isBuiltin: false,
 	colors: {
         "hca-blue": "#03173E",

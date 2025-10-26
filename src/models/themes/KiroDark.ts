@@ -6,6 +6,7 @@ import { Theme } from "../Theme";
 export const KIRO_DARK_THEME: Theme = {
 	id: "kiro-dark",
 	name: "Kiro Dark",
+	mode: "dark",
 	isBuiltin: false,
 	colors: {
 		"kiro-blue": "#8dc8fb",
