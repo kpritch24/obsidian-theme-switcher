@@ -90,6 +90,21 @@ export default class ThemeSwitcherPlugin extends Plugin {
 				await this.applyCurrentTheme();
 			},
 		});
+
+		this.addCommand({
+			id: "open-settings",
+			name: "Open plugin settings",
+			hotkeys: [{
+				modifiers: ["Mod"],
+				key: "s",
+			}],
+			callback: () => {
+				// @ts-ignore - using internal API
+				this.app.setting.open();
+				// @ts-ignore - using internal API
+				this.app.setting.openTabById(this.manifest.id);
+			},
+		});
 	}
 
 	/**

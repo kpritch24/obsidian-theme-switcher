@@ -39,12 +39,12 @@ export const KIRO_DARK_THEME: Theme = {
 		"kiro-white-3": "#dcdadf",
 	},
 	assignments: {
-		"BACKGROUND-DARK": "var(--kiro-darkest)",
 		"BACKGROUND-PRIMARY": "var(--kiro-dark)",
-		"BACKGROUND-LIGHT": "var(--kiro-white)",
+		"BACKGROUND-SECONDARY": "var(--kiro-darkest)",
 		"BACKGROUND-HIGHTLIGHT": "var(--kiro-gray-1)",
 		"BACKGROUND-CURRENT-LINE": "var(--kiro-gray)",
 
+		"TEXT": "var(--kiro-white)",
 		"TITLE": "var(--kiro-green)",
 		"ACCENT": "var(--kiro-turquoise)",
 		"ACTION": "var(--kiro-pink)",

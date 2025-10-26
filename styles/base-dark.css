@@ -5,13 +5,13 @@
 
 body {
     --background-primary: var(--BACKGROUND-PRIMARY);
-    --background-secondary: var(--BACKGROUND-DARK);
-    --code-background: var(--BACKGROUND-DARK);
-    --code-normal: var(--BACKGROUND-LIGHT);
-    --nav-item-color: var(--BACKGROUND-LIGHT);
+    --background-secondary: var(--BACKGROUND-SECONDARY);
+    --code-background: var(--BACKGROUND-SECONDARY);
+    --code-normal: var(--TEXT);
+    --nav-item-color: var(--TEXT);
     --text-highlight-bg: var(--BACKGROUND-PRIMARY);
-    --text-normal: var(--BACKGROUND-LIGHT);
-    --titlebar-background-focused: var(--BACKGROUND-DARK);
+    --text-normal: var(--TEXT);
+    --titlebar-background-focused: var(--BACKGROUND-SECONDARY);
 
     --inline-title-color: var(--TITLE);
     --link-color: var(--LINK);
@@ -24,20 +24,20 @@ body {
     --caret-color: var(--CARET);
     --table-header-color: var(--HEADER);
 
-    --background-modifier-hover: var(--BACKGROUND-DARK);
-    --nav-item-background-active: var(--BACKGROUND-DARK);
-    --nav-item-color-active: var(--BACKGROUND-LIGHT);
-    --nav-item-color-hover: var(--BACKGROUND-LIGHT);
+    --background-modifier-hover: var(--BACKGROUND-SECONDARY);
+    --nav-item-background-active: var(--BACKGROUND-SECONDARY);
+    --nav-item-color-active: var(--TEXT);
+    --nav-item-color-hover: var(--TEXT);
 
     --tab-text-color-active: var(--ACCENT);
-    --tab-text-color-focused: var(--BACKGROUND-LIGHT);
+    --tab-text-color-focused: var(--TEXT);
     --tab-text-color-focused-active: var(--ACCENT);
     --tab-text-color-focused-active-current: var(--ACCENT);
-    --icon-color-focused: var(--BACKGROUND-LIGHT);
-    --icon-color-hover: var(--BACKGROUND-LIGHT);
+    --icon-color-focused: var(--TEXT);
+    --icon-color-hover: var(--TEXT);
 
-    --vault-profile-color-hover: var(--BACKGROUND-LIGHT);
-    --tab-container-background: var(--BACKGROUND-DARK);
+    --vault-profile-color-hover: var(--TEXT);
+    --tab-container-background: var(--BACKGROUND-SECONDARY);
 }
 
 /* Table Selection */
@@ -52,7 +52,7 @@ td.is-selected {
 
 /* Quote Text */
 .HyperMD-quote {
-    background-color: var(--BACKGROUND-DARK);
+    background-color: var(--BACKGROUND-SECONDARY);
     border-left: 5px solid var(--ACTION) !important;
 }
 
@@ -139,14 +139,14 @@ td span[class*="highlight"] {
 
 /* Paragraphs */
 .cm-line {
-    color: var(--BACKGROUND-LIGHT);
+    color: var(--TEXT);
 }
 
 /* Side Menu: Active */
 .nav-file-title.is-active,
 .nav-folder-title.is-active {
     outline: 2px solid var(--ACCENT) !important;
-    color: var(--BACKGROUND-LIGHT) !important;
+    color: var(--TEXT) !important;
 }
 
 /* Side Menu: Hover */
@@ -159,12 +159,12 @@ td span[class*="highlight"] {
 .nav-file-title.is-active:hover,
 .nav-folder-title.is-active:hover {
     outline: 2px solid var(--ACCENT) !important;
-    color: var(--BACKGROUND-LIGHT) !important;
+    color: var(--TEXT) !important;
 }
 
 /* Main Tab Not Open Hover */
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-    color: var(--BACKGROUND-LIGHT) !important;
+    color: var(--TEXT) !important;
     box-shadow: inset 0 0 0 2px var(--ACTION) !important;
     border-radius: 6px !important;
 }
@@ -177,7 +177,7 @@ td span[class*="highlight"] {
 
 /* Open Top Left Menu Tab: Active */
 .workspace-split.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
-    background-color: var(--BACKGROUND-DARK) !important;
+    background-color: var(--BACKGROUND-SECONDARY) !important;
     color: var(--ACCENT) !important;
 }
 
@@ -213,29 +213,29 @@ td span[class*="highlight"] {
 
 /* Top Header Container */
 .workspace-tab-header-container {
-    background-color: var(--BACKGROUND-DARK) !important;
+    background-color: var(--BACKGROUND-SECONDARY) !important;
 }
 
 /* Settings Menu Active Item */
 .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-    color: var(--BACKGROUND-LIGHT) !important;
-    background-color: var(--BACKGROUND-DARK) !important;
+    color: var(--TEXT) !important;
+    background-color: var(--BACKGROUND-SECONDARY) !important;
     outline: 2px solid var(--ACCENT) !important;
 }
 
 /* Settings Menu Not Active Hover */
 .horizontal-tab-nav-item:hover,
 body:not(.is-phone) .vertical-tab-nav-item:hover {
-    color: var(--BACKGROUND-LIGHT) !important;
+    color: var(--TEXT) !important;
     outline: 2px solid var(--ACTION) !important;
 }
 
 /* Create/Rename Folder */
 .nav-file-title.is-being-renamed,
 .nav-folder-title.is-being-renamed {
-    background-color: var(--BACKGROUND-DARK) !important;
-    color: var(--BACKGROUND-LIGHT) !important;
+    background-color: var(--BACKGROUND-SECONDARY) !important;
+    color: var(--TEXT) !important;
 }
 
 .nav-folder-title.is-being-renamed {
@@ -248,7 +248,7 @@ body:not(.is-phone) .vertical-tab-nav-item:hover {
 
 /* Tab Close Button Hover */
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button {
-    color: var(--BACKGROUND-DARK) !important;
+    color: var(--BACKGROUND-SECONDARY) !important;
 }
 
 .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover {
@@ -285,5 +285,5 @@ body:not(.is-phone) .vertical-tab-nav-item:hover {
 .workspace-leaf-content .view-actions .clickable-icon:hover,
 .view-actions .view-action:hover,
 .view-actions .clickable-icon:hover {
-    background-color: var(--BACKGROUND-DARK) !important;
+    background-color: var(--BACKGROUND-SECONDARY) !important;
 }

@@ -625,8 +625,8 @@ export class ThemeSwitcherSettingTab extends PluginSettingTab {
 
 		// Group semantic variables by category
 		const categories = {
-			"Background": ["BACKGROUND-DARK", "BACKGROUND-PRIMARY", "BACKGROUND-LIGHT", "BACKGROUND-HIGHTLIGHT", "BACKGROUND-CURRENT-LINE"],
-			"UI Elements": ["TITLE", "ACCENT", "ACTION", "LIST", "HEADER", "CARET", "LINK"],
+			"Background": [, "BACKGROUND-PRIMARY", "BACKGROUND-SECONDARY", "BACKGROUND-HIGHTLIGHT", "BACKGROUND-CURRENT-LINE"],
+			"UI Elements": ["TEXT", "TITLE", "ACCENT", "ACTION", "LIST", "HEADER", "CARET", "LINK"],
 			"Text Formatting": ["BOLD", "ITALICS", "HIGHLIGHT", "STRIKETHROUGH", "ITEMS", "LINE_BREAK", "TAGS"],
 			"Headers": ["HEADER-1", "HEADER-2", "HEADER-3", "HEADER-4", "HEADER-5", "HEADER-6"],
 		};

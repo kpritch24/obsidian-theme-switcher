@@ -64,12 +64,12 @@ export const DRACULA_DARK_THEME: Theme = {
 		"tropical-yellow": "#F8F37E",
 	},
 	assignments: {
-		"BACKGROUND-DARK": "var(--Dracula-Dark)",
-		"BACKGROUND-PRIMARY": "var(--Dracula-Background)",
-		"BACKGROUND-LIGHT": "var(--Dracula-Foreground)",
+		"BACKGROUND-PRIMARY": "var(--Dracula-Dark)",
+		"BACKGROUND-SECONDARY": "var(--Dracula-Background)",
 		"BACKGROUND-HIGHTLIGHT": "var(--Dracula-Comment)",
 		"BACKGROUND-CURRENT-LINE": "var(--Dracula-Current-Line)",
 
+		"TEXT": "var(--Dracula-Foreground)",
 		"TITLE": "var(--color-cyan-2)",
 		"ACCENT": "var(--color-cyan-2)",
 		"ACTION": "var(--color-purple-2)",

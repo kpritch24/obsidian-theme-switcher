@@ -24,13 +24,13 @@ export interface ColorPalette {
  */
 export interface ColorAssignments {
 	// Background Colors
-	"BACKGROUND-DARK"?: string;
 	"BACKGROUND-PRIMARY"?: string;
-	"BACKGROUND-LIGHT"?: string;
+	"BACKGROUND-SECONDARY"?: string;
 	"BACKGROUND-HIGHTLIGHT"?: string;
 	"BACKGROUND-CURRENT-LINE"?: string;
 
 	// UI Elements
+	"TEXT"?: string;
 	"TITLE"?: string;
 	"ACCENT"?: string;
 	"ACTION"?: string;
@@ -62,13 +62,13 @@ export interface ColorAssignments {
  */
 export const SEMANTIC_VARIABLES: (keyof ColorAssignments)[] = [
 	// Background Colors
-	"BACKGROUND-DARK",
 	"BACKGROUND-PRIMARY",
-	"BACKGROUND-LIGHT",
+	"BACKGROUND-SECONDARY",
 	"BACKGROUND-HIGHTLIGHT",
 	"BACKGROUND-CURRENT-LINE",
 
 	// UI Elements
+	"TEXT",
 	"TITLE",
 	"ACCENT",
 	"ACTION",
