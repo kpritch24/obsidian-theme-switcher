@@ -61,7 +61,7 @@ export const KIRO_DARK_THEME: Theme = {
 		"LINE_BREAK": "var(--kiro-purple)",
 		"TAGS": "var(--kiro-orange)",
 
-		"HEADER-1": "var(--kiro-pink)",
+		"HEADER-1": "var(--kiro-purple)",
 		"HEADER-2": "var(--kiro-orange)",
 		"HEADER-3": "var(--kiro-blue)",
 		"HEADER-4": "var(--kiro-red)",
