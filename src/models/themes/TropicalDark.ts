@@ -21,7 +21,7 @@ export const TROPICAL_DARK_THEME: Theme = {
         "tropical-white": "#FFECDB",
         "tropical-blue-faded": "rgba(98,226,248,0.8)",
         "tropical-orange-faded": "rgba(248,155,98,1.0)",
-        "tropical-red-faded": "rgb(248,104,98,0.8)",
+        "tropical-red-faded": "rgba(248,104,98,0.8)",
         "tropical-green-faded": "rgba(98,248,195,0.5)",
         "tropical-yellow-faded": "rgba(248,243,126,0.5)",
         "tropical-purple-faded": "rgba(176,122,255,0.6)",

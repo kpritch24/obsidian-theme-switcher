@@ -4,6 +4,7 @@ import { StyleService } from "./src/services/StyleService";
 import { WindowService, VibrancyType } from "./src/services/WindowService";
 import { ThemeSwitcherSettingTab } from "./src/settings";
 import { Theme } from "./src/models/Theme";
+import iconSvg from "./assets/code-tag.svg";
 
 interface WindowSettings {
 	alwaysOnTop: boolean;
@@ -274,14 +275,13 @@ export default class ThemeSwitcherPlugin extends Plugin {
 		const icon = this.statusBarItem.createEl("span", {
 			cls: "theme-statusbar-icon",
 		});
-
-		// Load SVG icon
-		const iconPath = `${this.manifest.dir}/assets/code-tag.svg`;
-		this.app.vault.adapter.read(iconPath).then((svg) => {
-			icon.innerHTML = svg;
-		}).catch(() => {
-			icon.setText("🪟"); // Fallback to emoji if SVG fails to load
-		});
+		// Inline the SVG so mobile/Sync never needs the asset on disk
+		// (requires esbuild loader { ".svg": "text" } and a *.svg d.ts, which you have)
+		try {
+			icon.innerHTML = iconSvg;
+		} catch {
+			icon.setText("\u{1FA9F}"); // fallback emoji
+		}
 
 		// Create popup menu
 		const menu = this.statusBarItem.createDiv({ cls: "theme-statusbar-menu" });

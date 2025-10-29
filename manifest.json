@@ -1,7 +1,7 @@
 {
   "id": "obsidian-theme-switcher",
   "name": "Themes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minAppVersion": "0.15.0",
   "description": "Easily create, manage, and switch between custom color themes with a visual theme editor",
   "author": "Kurtis Pritchard",

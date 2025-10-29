@@ -34,13 +34,13 @@ export class StyleService {
 	 */
 	private async loadBaseStyles(): Promise<void> {
 		if (!this.cssCache.base) {
-			this.cssCache.base = await getBaseStructuralStyles(this.app, this.basePath);
+			this.cssCache.base = await getBaseStructuralStyles();
 		}
 		if (!this.cssCache.dark) {
-			this.cssCache.dark = await getBaseDarkStyles(this.app, this.basePath);
+			this.cssCache.dark = await getBaseDarkStyles();
 		}
 		if (!this.cssCache.light) {
-			this.cssCache.light = await getBaseLightStyles(this.app, this.basePath);
+			this.cssCache.light = await getBaseLightStyles();
 		}
 	}
 
@@ -120,7 +120,7 @@ export class StyleService {
 		lines.push("   (from window.css)");
 		lines.push("   ======================================== */");
 		lines.push("");
-		const windowStyles = await getWindowStyles(this.app, this.basePath);
+		const windowStyles = await getWindowStyles();
 		lines.push(windowStyles);
 
 		return lines.join("\n");
@@ -187,7 +187,7 @@ export class StyleService {
 		lines.push("   (from window.css)");
 		lines.push("   ======================================== */");
 		lines.push("");
-		const windowStyles = await getWindowStyles(this.app, this.basePath);
+		const windowStyles = await getWindowStyles();
 		lines.push(windowStyles);
 
 		return lines.join("\n");
