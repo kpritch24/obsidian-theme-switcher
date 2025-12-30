@@ -44,7 +44,7 @@ export const CATPPUCCIN_LATTE_THEME: Theme = {
 		"BACKGROUND-CURRENT-LINE": "var(--ctp-surface0)",
 
 		"TEXT": "var(--ctp-text)",
-		"TITLE": "var(--ctp-mauve)",
+		"TITLE": "var(--ctp-sky)",
 		"ACCENT": "var(--ctp-blue)",
 		"ACTION": "var(--ctp-pink)",
 		"LIST": "var(--ctp-sapphire)",
@@ -53,17 +53,17 @@ export const CATPPUCCIN_LATTE_THEME: Theme = {
 		"LINK": "var(--ctp-blue)",
 
 		"BOLD": "var(--ctp-peach)",
-		"ITALICS": "var(--ctp-pink)",
+		"ITALICS": "var(--ctp-maroon)",
 		"HIGHLIGHT": "var(--ctp-yellow)",
-		"STRIKETHROUGH": "var(--ctp-overlay1)",
-		"LINE_BREAK": "var(--ctp-surface2)",
+		"STRIKETHROUGH": "var(--ctp-sapphire)",
+		"LINE_BREAK": "var(--ctp-mauve)",
 		"TAGS": "var(--ctp-teal)",
 
 		"HEADER-1": "var(--ctp-mauve)",
 		"HEADER-2": "var(--ctp-red)",
 		"HEADER-3": "var(--ctp-peach)",
-		"HEADER-4": "var(--ctp-yellow)",
-		"HEADER-5": "var(--ctp-green)",
-		"HEADER-6": "var(--ctp-blue)",
+		"HEADER-4": "var(--ctp-green)",
+		"HEADER-5": "var(--ctp-sapphire)",
+		"HEADER-6": "var(--ctp-lavender)",
 	},
 };

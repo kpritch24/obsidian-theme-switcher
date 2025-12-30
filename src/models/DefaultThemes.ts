@@ -11,6 +11,16 @@ import { TOKYO_NIGHT_THEME } from "./themes/TokyoNight";
 import { TOKYO_NIGHT_STORM_THEME } from "./themes/TokyoNightStorm";
 import { TOKYO_NIGHT_MOON_THEME } from "./themes/TokyoNightMoon";
 import { TOKYO_NIGHT_LIGHT_THEME } from "./themes/TokyoNightLight";
+import { ONE_DARK_PRO_THEME } from "./themes/OneDarkPro";
+import { GRUVBOX_DARK_THEME } from "./themes/GruvboxDark";
+import { NORD_THEME } from "./themes/Nord";
+import { MATERIAL_OCEANIC_THEME } from "./themes/MaterialOceanic";
+import { MONOKAI_PRO_THEME } from "./themes/MonokaiPro";
+import { NIGHT_OWL_THEME } from "./themes/NightOwl";
+import { SOLARIZED_DARK_THEME } from "./themes/SolarizedDark";
+import { AYU_DARK_THEME } from "./themes/AyuDark";
+import { GITHUB_DARK_THEME } from "./themes/GitHubDark";
+import { ROSE_PINE_THEME } from "./themes/RosePine";
 
 export {
     HCA_LIGHT_THEME,
@@ -25,6 +35,16 @@ export {
     TOKYO_NIGHT_STORM_THEME,
     TOKYO_NIGHT_MOON_THEME,
     TOKYO_NIGHT_LIGHT_THEME,
+    ONE_DARK_PRO_THEME,
+    GRUVBOX_DARK_THEME,
+    NORD_THEME,
+    MATERIAL_OCEANIC_THEME,
+    MONOKAI_PRO_THEME,
+    NIGHT_OWL_THEME,
+    SOLARIZED_DARK_THEME,
+    AYU_DARK_THEME,
+    GITHUB_DARK_THEME,
+    ROSE_PINE_THEME,
 };
 
 export const DEFAULT_THEMES: Theme[] = [
@@ -40,4 +60,14 @@ export const DEFAULT_THEMES: Theme[] = [
     TOKYO_NIGHT_STORM_THEME,
     TOKYO_NIGHT_MOON_THEME,
     TOKYO_NIGHT_LIGHT_THEME,
+    ONE_DARK_PRO_THEME,
+    GRUVBOX_DARK_THEME,
+    NORD_THEME,
+    MATERIAL_OCEANIC_THEME,
+    MONOKAI_PRO_THEME,
+    NIGHT_OWL_THEME,
+    SOLARIZED_DARK_THEME,
+    AYU_DARK_THEME,
+    GITHUB_DARK_THEME,
+    ROSE_PINE_THEME,
 ];

@@ -46,11 +46,11 @@ export const TOKYO_NIGHT_LIGHT_THEME: Theme = {
 		"LINK": "var(--tn-cyan)",
 
 		"BOLD": "var(--tn-orange)",
-		"ITALICS": "var(--tn-magenta)",
+		"ITALICS": "var(--tn-red)",
 		"HIGHLIGHT": "var(--tn-yellow)",
-		"STRIKETHROUGH": "var(--tn-comment)",
-		"LINE_BREAK": "var(--tn-fg-dark)",
-		"TAGS": "var(--tn-teal)",
+		"STRIKETHROUGH": "var(--tn-teal)",
+		"LINE_BREAK": "var(--tn-purple)",
+		"TAGS": "var(--tn-green1)",
 
 		"HEADER-1": "var(--tn-magenta)",
 		"HEADER-2": "var(--tn-blue)",
